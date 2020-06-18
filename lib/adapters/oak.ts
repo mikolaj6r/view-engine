@@ -1,6 +1,6 @@
-import {join} from 'https://deno.land/std/path/posix.ts'
+//import {join} from 'https://deno.land/std/path/posix.ts'
 
-import { Context, Application } from "https://deno.land/x/oak/mod.ts";
+import { Context } from "https://deno.land/x/oak/mod.ts";
 import { Adapter, ViewConfig, Engine } from "../types/index.ts";
 import { getTemplate } from "../utils/utils.ts";
 
