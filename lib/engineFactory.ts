@@ -11,7 +11,6 @@ class EngineFactory {
   // dynamic import at runtime
   getDenjuckEngine() {
     return renderDenjuck;
-    return true;
   }
 
   getEjsEngine() {
