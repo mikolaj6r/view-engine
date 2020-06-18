@@ -2,6 +2,7 @@
 
 import { Context } from "https://deno.land/x/oak/mod.ts";
 import { Adapter, ViewConfig, Engine } from "../types/index.ts";
+//
 import { getTemplate } from "../utils/utils.ts";
 
 declare module "https://deno.land/x/oak/mod.ts" {
@@ -43,7 +44,8 @@ export const oakAdapter: Adapter = (
           // const filePath = view.viewRoot + fileName + view.viewExt;
           // const filePath = join(view.viewRoot!, fileName + view.viewExt);
 
-          template = await getTemplate(view.viewRoot!, fileName + view.viewExt);
+          //template = await getTemplate(view.viewRoot!, fileName + view.viewExt);
+          template = '';
           // cache template
           if (view.useCache) {
             view.cache?.set(fileName, template);
