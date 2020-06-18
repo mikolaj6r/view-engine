@@ -8,7 +8,7 @@ export const renderDenjuck: Engine = (
   config: ViewConfig = {}
 ) => {
   if(config.viewRoot){
-   // denjucks.configure(config.viewRoot)
+   denjucks.configure(config.viewRoot)
   }
 
   return "";
