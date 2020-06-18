@@ -9,7 +9,14 @@ export async function getTemplate(viewRoot: string, fileName: string) {
   if (filePath.match(urlRegex)) {
     return await fetch(filePath).then((res) => res.text());
   } else {
-    filePath = join(viewRoot, fileName);
-    return Deno.readTextFileSync(filePath);
+    try{
+      console.log(viewRoot, fileName)
+      filePath = join(viewRoot, fileName);
+      console.log(filePath)
+      return Deno.readTextFileSync(filePath);
+    } catch(error){
+      console.error(error);
+    }
+    
   }
 }
