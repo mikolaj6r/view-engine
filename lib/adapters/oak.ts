@@ -2,8 +2,8 @@
 
 import { Context } from "https://deno.land/x/oak/mod.ts";
 import { Adapter, ViewConfig, Engine } from "../types/index.ts";
-//
-import { getTemplate } from "../utils/utils.ts";
+
+//import { getTemplate } from "../utils/utils.ts";
 
 declare module "https://deno.land/x/oak/mod.ts" {
   interface Context {
