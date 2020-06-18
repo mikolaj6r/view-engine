@@ -1,4 +1,4 @@
-// import denjucks from "https://deno.land/x/denjucks/mod.js";
+import denjucks from "https://deno.land/x/denjucks/mod.js";
 import { Engine, ViewConfig } from "../types/index.ts";
 
 export const renderDenjuck: Engine = (
@@ -7,9 +7,8 @@ export const renderDenjuck: Engine = (
   config: ViewConfig = {}
 ) => {
   if(config.viewRoot){
-    //denjucks.configure(config.viewRoot)
+    denjucks.configure(config.viewRoot)
   }
 
-  //return denjucks.renderString(template, data);
-  return "test"
+  return denjucks.renderString(template, data);
 };
